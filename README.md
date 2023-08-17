@@ -1,3 +1,9 @@
+#            VERSION 1.0.5 IS HERE!
+### whats new?
+- Version: 1.0.5
+- Added: IP Lookup Tool
+- Added: Another Page(2)
+
 ![Show me the code](https://i.imgur.com/pbkXJZh.jpg)
 
 
