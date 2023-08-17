@@ -10,7 +10,7 @@
 ‎ ‎ ‎ ‎ 
 ‎ ‎ ‎ ‎ 
 ‎ ‎ ‎ ‎ 
-##            VERSION 1.0.5 IS HERE!
+##            (old) VERSION 1.0.5 IS HERE!
 ### whats new?
 - Version: 1.0.5
 - Added: IP Lookup Tool
