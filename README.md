@@ -7,7 +7,7 @@
 ‎ ‎ ‎ 
 ‎ ‎ ‎ 
 ‎ ‎ ‎ ‎ 
-‎ ‎ ‎ ‎ 
+
 ‎ ‎ ‎ ‎ 
 ‎ ‎ ‎ ‎ 
 ##            (old) VERSION 1.0.5 IS HERE!
@@ -19,20 +19,28 @@
 ![Show me the code](https://i.imgur.com/pbkXJZh.jpg)
 
 
+---------------
 
-Welcome to Acio's repo!
+# HOW TO INSTALL
+#### 1st - Installation:
+    Launch the ACIO.bat file. (You will only have to launch it.) 
+
+#### 2st - Installation (Manual installation)
+    $ git clone https://github.com/knnb/ACIO-NUKER.git
+    Launch the ACIO.bat file.
 
 
-                  █████╗  ██████╗██╗ ██████╗     ███╗   ██╗██╗   ██╗██╗  ██╗███████╗██████╗ 
-                 ██╔══██╗██╔════╝██║██╔═══██╗    ████╗  ██║██║   ██║██║ ██╔╝██╔════╝██╔══██╗
-                 ███████║██║     ██║██║   ██║    ██╔██╗ ██║██║   ██║█████╔╝ █████╗  ██████╔╝
-                 ██╔══██║██║     ██║██║   ██║    ██║╚██╗██║██║   ██║██╔═██╗ ██╔══╝  ██╔══██╗
-                 ██║  ██║╚██████╗██║╚██████╔╝    ██║ ╚████║╚██████╔╝██║  ██╗███████╗██║  ██║
-                 ╚═╝  ╚═╝ ╚═════╝╚═╝ ╚═════╝     ╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+---------------
+
+## Additional Informations
+General Informations:
+- If you have a problem, [Join Our Discord](https://discord.gg/clod)
+- If you find any error or bugs, contact me on Discord: @_ny2
 
 
-ㅤ
-## Disclaimer
+---------------
+
+# Disclaimer
 
 |Acio was made for Educational purposes|
 |-------------------------------------------------|
