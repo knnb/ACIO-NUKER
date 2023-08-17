@@ -3,7 +3,7 @@ chcp 65001
 cls
 del message.vbs
 set tokens=0
-set version=1.0.5
+set version=1.0.6
 set commands=5
 set proxies=971
 
@@ -507,8 +507,7 @@ goto terms
 :versionview
 echo.
 echo Version: [40;34m%version%[40;37m
-echo   Added: [40;33mIP Lookup Tool[40;37m
-echo   Added: [40;33mAnother Page(2)[40;37m
+echo   Added: [40;33mToken Checker[40;37m
 set /p versionview=
 goto main
 
@@ -660,7 +659,7 @@ echo                                       [40;32m[!] [40;37mSettings         
 echo                                       [40;32m[#] [40;37mUpdate                                       │       [40;32mDiscord.gg/clod[40;37m       │
 echo                                       [40;32m[?] [40;37mVersion                                      └─────────────────────────────┘
 echo    				     [40;37m╔════════════════════════════════════════╗
-echo 		  	 	     ║ [[40;32m08[40;37m] Soon..                            ║
+echo 		  	 	     ║ [[40;32m08[40;37m] Token Checker                     ║
 echo    				     ║ [[40;32m09[40;37m] Soon..                            ║
 echo    				     ║ [[40;32m10[40;37m] Soon..                            ║
 echo    				     ║ [[40;32m11[40;37m] Soon..                            ║
@@ -673,7 +672,7 @@ echo    				     ║ [[40;31m16[40;37m] Exit                              ║
 echo                                      ╚════════════════════════════════════════╝
 echo ╔═══[40;32m[[40;37mACIO[40;32m@[40;37mMENU[40;32m][40;37m
 set /p main2=╚══[40;32m^>[40;37m 
-if %main2% == 08 echo Comming Soon!
+if %main2% == 08 goto tokenchecker
 if %main2% == 09 echo Comming Soon!
 if %main2% == 10 echo Comming Soon!
 if %main2% == 11 echo Comming Soon!
@@ -687,6 +686,32 @@ echo  Error!
 timeout 1 >nul
 goto main2
 
+
+
+
+
+
+
+
+
+
+:tokenchecker
+cls
+echo.
+echo 			  [40;32m.___________.  ______    __  ___  _______ .__   __. 
+echo 			  ^|           ^| /  __  \  ^|  ^|/  / ^|   ____^|^|  \ ^|  ^| 
+echo 			  `---^|  ^|----`^|  ^|  ^|  ^| ^|  '  /  ^|  ^|__   ^|   \^|  ^| 
+echo 			      ^|  ^|     ^|  ^|  ^|  ^| ^|    ^<^   ^|   __^|  ^|  . `  ^| 
+echo 			      ^|  ^|     ^|  `--'  ^| ^|  .  \  ^|  ^|____ ^|  ^|\   ^| 
+echo 			      ^|__^|      \______/  ^|__^|\__\ ^|_______^|^|__^| \__^| 
+echo 			    ______  __    __   _______   ______  __  ___  _______ .______      
+echo 			   /      ^|^|  ^|  ^|  ^| ^|   ____^| /      ^|^|  ^|/  / ^|   ____^|^|   _  \     
+echo 			  ^|  ,----'^|  ^|__^|  ^| ^|  ^|__   ^|  ,----'^|  '  /  ^|  ^|__   ^|  ^|_)  ^|    
+echo 			  ^|  ^|     ^|   __   ^| ^|   __^|  ^|  ^|     ^|    ^<^   ^|   __^|  ^|      /     
+echo 			  ^|  `----.^|  ^|  ^|  ^| ^|  ^|____ ^|  `----.^|  .  \  ^|  ^|____ ^|  ^|\  \----.
+echo 			   \______^|^|__^|  ^|__^| ^|_______^| \______^|^|__^|\__\ ^|_______^|^| _^| `._____^|[40;37m
+echo.
+python %CD%\addons\checker.py                                                                                                                         
 
 
 
