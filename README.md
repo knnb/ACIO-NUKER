@@ -1,4 +1,16 @@
-#            VERSION 1.0.5 IS HERE!
+#            VERSION 1.0.6 IS HERE!
+### whats new?
+- Version: 1.0.6
+- Added: Token Checker
+  
+> SOON: Token Joiner
+‎ ‎ ‎ 
+‎ ‎ ‎ 
+‎ ‎ ‎ ‎ 
+‎ ‎ ‎ ‎ 
+‎ ‎ ‎ ‎ 
+‎ ‎ ‎ ‎ 
+##            VERSION 1.0.5 IS HERE!
 ### whats new?
 - Version: 1.0.5
 - Added: IP Lookup Tool
