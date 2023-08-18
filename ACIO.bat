@@ -3,7 +3,7 @@ chcp 65001
 cls
 del message.vbs
 set tokens=0
-set version=1.0.7
+set version=1.0.8
 set commands=5
 set proxies=971
 
@@ -86,10 +86,9 @@ echo 						%logo5% [40;32m \____^|___\___/[40;37m
 echo 						%logo6%
 ECHO.
 echo                                                         [40;32mL[40;37mo[40;32ma[40;37md[40;32mi[40;37mn[40;32mg[40;32m.[40;37m.
-timeout 2 >nul
+timeout 0 >nul
 echo.
-echo                                                       [40;32mPlease Wait![40;37m
-timeout 4 >nul
+timeout 0 >nul
 
 
 
@@ -112,9 +111,9 @@ echo 					    [40;32m╚═╝  ╚═╝ ╚═════╝╚═╝ ╚═
 echo. 
 echo  [40;32m^> [40;37mPage: [40;32m1[40;37m              	     ╔════════════════════════════════════════╗
 echo  [40;32m^> [40;37m[[40;32mTM[40;37m] About                        ║ [40;32m^> [40;37mMade By: [40;32m@_ny2[40;37m                       ║        ┌─────────────────────────────┐
-echo  [40;32m^> [40;37m[40;32mhttps://[40;37mgithub.com/[40;32mknnb[40;37m           ║ [40;32m^> [40;37mTokens: [40;32m%tokens%[40;37m                            ║        │      Good Proxies: [40;32m%proxies%[40;37m      │
+echo  [40;32m^> [40;37m[[40;32mGT[40;37m] View Github                  ║ [40;32m^> [40;37mTokens: [40;32m%tokens%[40;37m                            ║        │      Good Proxies: [40;32m%proxies%[40;37m      │
 echo  [40;32m^> [40;37m[[40;32mDC[40;37m] Join Discord                 ╚════════════════════════════════════════╝        │    Running On: [40;32m%username%'s PC.[40;37m  │
-echo                                       [40;32m[!] [40;37mSettings                                     ├─────────────────────────────┤
+echo  [40;32m^> [40;37m[[40;32mST[40;37m] View Store [40;32m                   [!] [40;37mSettings                                     ├─────────────────────────────┤
 echo                                       [40;32m[#] [40;37mUpdate                                       │       [40;32mDiscord.gg/clod[40;37m       │
 echo                                       [40;32m[?] [40;37mVersion                                      └─────────────────────────────┘
 echo    				     [40;37m╔════════════════════════════════════════╗
@@ -124,7 +123,7 @@ echo    				     ║ [[40;32m03[40;37m] Webhook Spammer                   ║
 echo    				     ║ [[40;32m04[40;37m] Webhook Deleter                   ║
 echo    				     ║ [[40;32m05[40;37m] Nitro Gen                         ║
 echo    				     ║ [[40;32m06[40;37m] IP Lookup                         ║
-echo    				     ║ [[40;32m07[40;37m] NEXT                              ║
+echo    				     ║ [[40;33m07[40;37m] NEXT                              ║
 echo                                      ║════════════════════════════════════════║
 echo    				     ║ [[40;32m08[40;37m] Credits                           ║
 echo    				     ║ [[40;31m09[40;37m] Exit                              ║
@@ -144,13 +143,24 @@ if %main% == ! goto settings
 if %main% == ? goto versionview
 if %main% == 08 goto credits
 if %main% == 09 exit
+
+if %main% == gt start https://github.com/knnb & goto main
+if %main% == GT start https://github.com/knnb & goto main
+if %main% == Gt start https://github.com/knnb & goto main
+
 if %main% == tm goto aboutacio
 if %main% == TM goto aboutacio
 if %main% == Tm goto aboutacio
+
+if %main% == st start https://kln.sell.app/ & goto main
+if %main% == ST start https://kln.sell.app/ & goto main
+if %main% == St start https://kln.sell.app/ & goto main
+
 if %main% == discord start https://discord.gg/clod & goto main
 if %main% == dc start https://discord.gg/clod & goto main
 if %main% == DISCORD start https://discord.gg/clod & goto main
 if %main% == DC start https://discord.gg/clod & goto main
+
 echo  Error!
 timeout 1 >nul
 goto main
@@ -290,7 +300,7 @@ goto main
 @echo off
 cls
 echo.
-py %CD%\addons\Nuker.py
+python %CD%\addons\accountNuke.py
 echo.
 pause
 goto main
@@ -405,7 +415,7 @@ echo 			 	 ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  
 echo.
 set /p update="[[40;32m>[40;37m] Upate? (y/n):
 if %update% == y goto updater
-if %update% == n echo Leaving page.. & timeout 1 >nul & goto main
+if %update% == n echo Leaving page.. & timeout 0 >nul & goto main
 
 :updater
 echo.
@@ -463,6 +473,10 @@ if %settings% == 2 goto installreq
 if %settings% == 3 goto disableprox
 if %settings% == 4 goto main
 
+echo  Error!
+timeout 1 >nul
+goto settings
+
 
 :disableprox
 cls
@@ -485,6 +499,12 @@ if %disableprox% == 1 goto main & echo [40;32m
 if %disableprox% == 2 goto installreq2
 if %disableprox% == 3 goto settings
 if %disableprox% == 4 goto main
+
+echo  Error!
+timeout 1 >nul
+goto disableprox
+
+
 
 :installreq2
 echo.
@@ -558,8 +578,7 @@ goto terms
 :versionview
 echo.
 echo Version: [40;34m%version%[40;37m
-echo   Added: [40;33mToken Checker[40;37m
-echo   Added: [40;33mToken Brute-Force[40;37m
+echo   Added: [40;33mServer Booster[40;37m
 set /p versionview=
 goto main
 
@@ -705,9 +724,9 @@ echo 					    [40;32m╚═╝  ╚═╝ ╚═════╝╚═╝ ╚═
 echo. 
 echo  [40;32m^> [40;37mPage: [40;32m2[40;37m              	     ╔════════════════════════════════════════╗
 echo  [40;32m^> [40;37m[[40;32mTM[40;37m] About                        ║ [40;32m^> [40;37mMade By: [40;32m@_ny2[40;37m                       ║        ┌─────────────────────────────┐
-echo  [40;32m^> [40;37m[40;32mhttps://[40;37mgithub.com/[40;32mknnb[40;37m           ║ [40;32m^> [40;37mTokens: [40;32m%tokens%[40;37m                            ║        │      Good Proxies: [40;32m%proxies%[40;37m      │
-echo                                      ╚════════════════════════════════════════╝        │    Running On: [40;32m%username%'s PC.[40;37m  │
-echo                                       [40;32m[!] [40;37mSettings                                     ├─────────────────────────────┤
+echo  [40;32m^> [40;37m[[40;32mGT[40;37m] View Github                  ║ [40;32m^> [40;37mTokens: [40;32m%tokens%[40;37m                            ║        │      Good Proxies: [40;32m%proxies%[40;37m      │
+echo  [40;32m^> [40;37m[[40;32mDC[40;37m] Join Discord                 ╚════════════════════════════════════════╝        │    Running On: [40;32m%username%'s PC.[40;37m  │
+echo  [40;32m^> [40;37m[[40;32mST[40;37m] View Store [40;32m                   [!] [40;37mSettings                                     ├─────────────────────────────┤
 echo                                       [40;32m[#] [40;37mUpdate                                       │       [40;32mDiscord.gg/clod[40;37m       │
 echo                                       [40;32m[?] [40;37mVersion                                      └─────────────────────────────┘
 echo    				     [40;37m╔════════════════════════════════════════╗
@@ -717,7 +736,7 @@ echo    				     ║ [[40;32m10[40;37m] Server Booster                    ║
 echo    				     ║ [[40;32m11[40;37m] Soon..                            ║
 echo    				     ║ [[40;32m12[40;37m] Soon..                            ║
 echo    				     ║ [[40;32m13[40;37m] Soon..                            ║
-echo    				     ║ [[40;32m14[40;37m] BACK                              ║
+echo    				     ║ [[40;33m14[40;37m] BACK                              ║
 echo                                      ║════════════════════════════════════════║
 echo    				     ║ [[40;32m15[40;37m] Credits                           ║
 echo    				     ║ [[40;31m16[40;37m] Exit                              ║
@@ -733,6 +752,27 @@ if %main2% == 13 echo Comming Soon!
 if %main2% == 14 goto main
 if %main2% == 15 goto credits
 if %main2% == 16 exit
+
+if %main2% == # goto update
+if %main2% == ! goto settings
+if %main2% == ? goto versionview
+
+if %main2% == gt start https://github.com/knnb & goto main2
+if %main2% == GT start https://github.com/knnb & goto main2
+if %main2% == Gt start https://github.com/knnb & goto main2
+
+if %main2% == tm goto aboutacio
+if %main2% == TM goto aboutacio
+if %main2% == Tm goto aboutacio
+
+if %main2% == st start https://kln.sell.app/ & goto main2
+if %main2% == ST start https://kln.sell.app/ & goto main2
+if %main2% == St start https://kln.sell.app/ & goto main2
+
+if %main2% == discord start https://discord.gg/clod & goto main2
+if %main2% == dc start https://discord.gg/clod & goto main2
+if %main2% == DISCORD start https://discord.gg/clod & goto main2
+if %main2% == DC start https://discord.gg/clod & goto main2
 
 echo  Error!
 timeout 1 >nul
@@ -763,7 +803,8 @@ echo 			  ^|  ^|     ^|   __   ^| ^|   __^|  ^|  ^|     ^|    ^<^   ^|   __^|  ^
 echo 			  ^|  `----.^|  ^|  ^|  ^| ^|  ^|____ ^|  `----.^|  .  \  ^|  ^|____ ^|  ^|\  \----.
 echo 			   \______^|^|__^|  ^|__^| ^|_______^| \______^|^|__^|\__\ ^|_______^|^| _^| `._____^|[40;37m
 echo.
-python %CD%\addons\checker.py                                                                                                                         
+python %CD%\addons\checker.py
+goto main2                                                                                                                        
 
 
 
@@ -773,6 +814,7 @@ python %CD%\addons\checker.py
 :TokenBruteForce
 cls
 python %CD%\addons\tokenbrute.py
+goto main2
 
 
 
