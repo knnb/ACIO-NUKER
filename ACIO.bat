@@ -3,10 +3,15 @@ chcp 65001
 cls
 del message.vbs
 set tokens=0
-set version=1.0.6
+set version=1.0.7
 set commands=5
 set proxies=971
 
+
+
+
+:logotest
+cls
 set logo1= █████[40;32m╗[40;37m 
 set logo2=██[40;32m╔══[40;37m██[40;32m╗[40;37m
 set logo3=███████[40;32m║[40;37m
@@ -107,7 +112,7 @@ echo 					    [40;32m╚═╝  ╚═╝ ╚═════╝╚═╝ ╚═
 echo. 
 echo  [40;32m^> [40;37mPage: [40;32m1[40;37m              	     ╔════════════════════════════════════════╗
 echo  [40;32m^> [40;37m[[40;32mTM[40;37m] About                        ║ [40;32m^> [40;37mMade By: [40;32m@_ny2[40;37m                       ║        ┌─────────────────────────────┐
-echo                                      ║ [40;32m^> [40;37mTokens: [40;32m%tokens%[40;37m                            ║        │      Good Proxies: [40;32m%proxies%[40;37m      │
+echo  [40;32m^> [40;37m[40;32mhttps://[40;37mgithub.com/[40;32mknnb[40;37m           ║ [40;32m^> [40;37mTokens: [40;32m%tokens%[40;37m                            ║        │      Good Proxies: [40;32m%proxies%[40;37m      │
 echo                                      ╚════════════════════════════════════════╝        │    Running On: [40;32m%username%'s PC.[40;37m  │
 echo                                       [40;32m[!] [40;37mSettings                                     ├─────────────────────────────┤
 echo                                       [40;32m[#] [40;37mUpdate                                       │       [40;32mDiscord.gg/clod[40;37m       │
@@ -443,15 +448,56 @@ echo 					    [40;32m╚═╝  ╚═╝ ╚═════╝╚═╝ ╚═
 echo.
 echo                                               [40;32m[[40;37m1[40;32m][40;37m Change Gui Color
 echo                                               [40;32m[[40;37m2[40;32m][40;37m Install Requirements 
-echo                                               [40;32m[[40;37m3[40;32m][40;37m Go Back 
+echo                                               [40;32m[[40;37m3[40;32m][40;37m Proxies: [40;32mEnabled[40;37m
+echo                                               [40;32m[[40;37m4[40;32m][40;37m Go Back 
 echo.
 echo.
 set /p settings="[[40;32m>[40;37m] Choise?: 
 if %settings% == 1 goto main & echo [40;32m
 if %settings% == 2 goto installreq
-if %settings% == 3 goto main
+if %settings% == 3 goto disableprox
+if %settings% == 4 goto main
 
 
+:disableprox
+cls
+echo.
+echo  			 		     [40;37m█████[40;32m╗  [40;37m██████[40;32m╗[40;37m██[40;32m╗ [40;37m██████[40;32m╗ 
+echo 					    [40;37m██[40;32m╔══[40;37m██[40;32m╗[40;37m██[40;32m╔════╝[40;37m██[40;32m║[40;37m██[40;32m╔═══[40;37m██[40;32m╗
+echo 					    [40;37m███████[40;32m║[40;37m██[40;32m║     [40;37m██[40;32m║[40;37m██[40;32m║   [40;37m██[40;32m║
+echo 					    [40;37m██[40;32m╔══[40;37m██[40;32m║[40;37m██[40;32m║     [40;37m██[40;32m║[40;37m██[40;32m║   [40;37m██[40;32m║
+echo 					    [40;37m██[40;32m║  [40;37m██[40;32m║╚[40;37m██████[40;32m╗[40;37m██[40;32m║╚[40;37m██████[40;32m╔╝
+echo 					    [40;32m╚═╝  ╚═╝ ╚═════╝╚═╝ ╚═════╝[40;37m
+echo.
+echo                                               [40;32m[[40;37m1[40;32m][40;37m Change Gui Color
+echo                                               [40;32m[[40;37m2[40;32m][40;37m Install Requirements 
+echo                                               [40;32m[[40;37m3[40;32m][40;37m Proxies: [40;31mDisabled[40;37m
+echo                                               [40;32m[[40;37m4[40;32m][40;37m Go Back 
+echo.
+echo.
+set /p disableprox="[[40;32m>[40;37m] Choise?: 
+if %disableprox% == 1 goto main & echo [40;32m
+if %disableprox% == 2 goto installreq2
+if %disableprox% == 3 goto settings
+if %disableprox% == 4 goto main
+
+:installreq2
+echo.
+pip install os
+pip install random
+pip install string
+pip install time
+pip install ctypes
+pip install pystyle
+pip install subprocess
+pip install colorama
+pip install time
+pip install tkinter
+echo.
+echo.
+echo Done!
+timeout 3 >nul
+goto disableprox
 
 
 :installreq
@@ -508,6 +554,7 @@ goto terms
 echo.
 echo Version: [40;34m%version%[40;37m
 echo   Added: [40;33mToken Checker[40;37m
+echo   Added: [40;33mToken Brute-Force[40;37m
 set /p versionview=
 goto main
 
@@ -653,14 +700,14 @@ echo 					    [40;32m╚═╝  ╚═╝ ╚═════╝╚═╝ ╚═
 echo. 
 echo  [40;32m^> [40;37mPage: [40;32m2[40;37m              	     ╔════════════════════════════════════════╗
 echo  [40;32m^> [40;37m[[40;32mTM[40;37m] About                        ║ [40;32m^> [40;37mMade By: [40;32m@_ny2[40;37m                       ║        ┌─────────────────────────────┐
-echo                                      ║ [40;32m^> [40;37mTokens: [40;32m%tokens%[40;37m                            ║        │      Good Proxies: [40;32m%proxies%[40;37m      │
+echo  [40;32m^> [40;37m[40;32mhttps://[40;37mgithub.com/[40;32mknnb[40;37m           ║ [40;32m^> [40;37mTokens: [40;32m%tokens%[40;37m                            ║        │      Good Proxies: [40;32m%proxies%[40;37m      │
 echo                                      ╚════════════════════════════════════════╝        │    Running On: [40;32m%username%'s PC.[40;37m  │
 echo                                       [40;32m[!] [40;37mSettings                                     ├─────────────────────────────┤
 echo                                       [40;32m[#] [40;37mUpdate                                       │       [40;32mDiscord.gg/clod[40;37m       │
 echo                                       [40;32m[?] [40;37mVersion                                      └─────────────────────────────┘
 echo    				     [40;37m╔════════════════════════════════════════╗
 echo 		  	 	     ║ [[40;32m08[40;37m] Token Checker                     ║
-echo    				     ║ [[40;32m09[40;37m] Soon..                            ║
+echo    				     ║ [[40;32m09[40;37m] Token Brute-Force                 ║
 echo    				     ║ [[40;32m10[40;37m] Soon..                            ║
 echo    				     ║ [[40;32m11[40;37m] Soon..                            ║
 echo    				     ║ [[40;32m12[40;37m] Soon..                            ║
@@ -673,7 +720,7 @@ echo                                      ╚═══════════�
 echo ╔═══[40;32m[[40;37mACIO[40;32m@[40;37mMENU[40;32m][40;37m
 set /p main2=╚══[40;32m^>[40;37m 
 if %main2% == 08 goto tokenchecker
-if %main2% == 09 echo Comming Soon!
+if %main2% == 09 goto TokenBruteForce
 if %main2% == 10 echo Comming Soon!
 if %main2% == 11 echo Comming Soon!
 if %main2% == 12 echo Comming Soon!
@@ -717,6 +764,10 @@ python %CD%\addons\checker.py
 
 
 
+
+:TokenBruteForce
+cls
+python %CD%\addons\tokenbrute.py
 
 
 
