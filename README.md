@@ -2,29 +2,12 @@
 ### whats new?
 - Version: 1.0.7
 - Added: Token Brute-Force
+- Added: Enable/Disable Proxies
   
-> SOON: Token Joiner
+
 -------------------
 
 
-
-###           (old) VERSION 1.0.6 IS HERE!
-#### whats new?
-- Version: 1.0.6
-- Added: Token Checker
-  
-> SOON: Token Joiner
-‎ ‎ ‎ 
- ‎ 
-‎ ‎ ‎ ‎ 
-
- ‎ 
-‎ ‎ ‎ ‎ 
-####            (old) VERSION 1.0.5 IS HERE!
-##### whats new?
-- Version: 1.0.5
-- Added: IP Lookup Tool
-- Added: Another Page(2)
 
 ![Show me the code](https://i.imgur.com/pbkXJZh.jpg)
 
