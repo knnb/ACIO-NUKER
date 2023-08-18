@@ -113,7 +113,7 @@ echo.
 echo  [40;32m^> [40;37mPage: [40;32m1[40;37m              	     ╔════════════════════════════════════════╗
 echo  [40;32m^> [40;37m[[40;32mTM[40;37m] About                        ║ [40;32m^> [40;37mMade By: [40;32m@_ny2[40;37m                       ║        ┌─────────────────────────────┐
 echo  [40;32m^> [40;37m[40;32mhttps://[40;37mgithub.com/[40;32mknnb[40;37m           ║ [40;32m^> [40;37mTokens: [40;32m%tokens%[40;37m                            ║        │      Good Proxies: [40;32m%proxies%[40;37m      │
-echo                                      ╚════════════════════════════════════════╝        │    Running On: [40;32m%username%'s PC.[40;37m  │
+echo  [40;32m^> [40;37m[[40;32mDC[40;37m] Join Discord                 ╚════════════════════════════════════════╝        │    Running On: [40;32m%username%'s PC.[40;37m  │
 echo                                       [40;32m[!] [40;37mSettings                                     ├─────────────────────────────┤
 echo                                       [40;32m[#] [40;37mUpdate                                       │       [40;32mDiscord.gg/clod[40;37m       │
 echo                                       [40;32m[?] [40;37mVersion                                      └─────────────────────────────┘
@@ -145,7 +145,12 @@ if %main% == ? goto versionview
 if %main% == 08 goto credits
 if %main% == 09 exit
 if %main% == tm goto aboutacio
+if %main% == TM goto aboutacio
+if %main% == Tm goto aboutacio
 if %main% == discord start https://discord.gg/clod & goto main
+if %main% == dc start https://discord.gg/clod & goto main
+if %main% == DISCORD start https://discord.gg/clod & goto main
+if %main% == DC start https://discord.gg/clod & goto main
 echo  Error!
 timeout 1 >nul
 goto main
@@ -708,7 +713,7 @@ echo                                       [40;32m[?] [40;37mVersion          
 echo    				     [40;37m╔════════════════════════════════════════╗
 echo 		  	 	     ║ [[40;32m08[40;37m] Token Checker                     ║
 echo    				     ║ [[40;32m09[40;37m] Token Brute-Force                 ║
-echo    				     ║ [[40;32m10[40;37m] Soon..                            ║
+echo    				     ║ [[40;32m10[40;37m] Server Booster                    ║
 echo    				     ║ [[40;32m11[40;37m] Soon..                            ║
 echo    				     ║ [[40;32m12[40;37m] Soon..                            ║
 echo    				     ║ [[40;32m13[40;37m] Soon..                            ║
@@ -721,7 +726,7 @@ echo ╔═══[40;32m[[40;37mACIO[40;32m@[40;37mMENU[40;32m][40;37m
 set /p main2=╚══[40;32m^>[40;37m 
 if %main2% == 08 goto tokenchecker
 if %main2% == 09 goto TokenBruteForce
-if %main2% == 10 echo Comming Soon!
+if %main2% == 10 goto serverbooster
 if %main2% == 11 echo Comming Soon!
 if %main2% == 12 echo Comming Soon!
 if %main2% == 13 echo Comming Soon!
@@ -770,5 +775,19 @@ cls
 python %CD%\addons\tokenbrute.py
 
 
+
+:serverbooster
+cls
+echo.
+echo 			[40;32m██   ▄█▄    ▄█ ████▄     ███   ████▄ ████▄    ▄▄▄▄▄      ▄▄▄▄▀ ▄███▄   █▄▄▄▄ 
+echo 			█ █  █▀ ▀▄  ██ █   █     █  █  █   █ █   █   █     ▀▄ ▀▀▀ █    █▀   ▀  █  ▄▀ 
+echo 			█▄▄█ █   ▀  ██ █   █     █ ▀ ▄ █   █ █   █ ▄  ▀▀▀▀▄       █    ██▄▄    █▀▀▌  
+echo 			█  █ █▄  ▄▀ ▐█ ▀████     █  ▄▀ ▀████ ▀████  ▀▄▄▄▄▀       █     █▄   ▄▀ █  █  
+echo 			   █ ▀███▀   ▐           ███                            ▀      ▀███▀     █   
+echo 			  █                                                                     ▀    
+echo 			 ▀[40;32m                                                                           
+echo.
+python %CD%\addons\serverbooster.py
+goto main2
 
 
