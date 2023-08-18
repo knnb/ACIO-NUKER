@@ -1,8 +1,7 @@
-#            VERSION 1.0.7 IS HERE!
+#            VERSION 1.0.8 IS HERE!
 ### whats new?
-- Version: 1.0.7
-- Added: Token Brute-Force
-- Added: Enable/Disable Proxies
+- Version: 1.0.8
+- Added: Server Booster
   
 
 -------------------
