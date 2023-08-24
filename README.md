@@ -1,7 +1,7 @@
-#            VERSION 1.0.8 IS HERE!
+#            VERSION 1.0.9 IS HERE!
 ### whats new?
 - Version: 1.0.8
-- Added: Server Booster
+- Added: New Color Theme
   
 
 -------------------
