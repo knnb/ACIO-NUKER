@@ -1,7 +1,7 @@
-#            VERSION 1.0.9 IS HERE!
+#            VERSION 1.1.0 IS HERE!
 ### whats new?
 - Version: 1.0.9
-- Added: New Color Theme
+- Added: New DDoS Script
   
 
 -------------------
