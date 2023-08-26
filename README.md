@@ -1,6 +1,6 @@
 #            VERSION 1.1.0 IS HERE!
 ### whats new?
-- Version: 1.0.9
+- Version: 1.1.0
 - Added: New DDoS Script
   
 
