@@ -3,7 +3,7 @@ chcp 65001
 cls
 del message.vbs
 set tokens=0
-set version=1.0.9
+set version=1.1.0
 set commands=5
 set proxies=971
 set premium=No
@@ -107,9 +107,9 @@ if %main% == tm goto aboutacio
 if %main% == TM goto aboutacio
 if %main% == Tm goto aboutacio
 
-if %main% == st start https://kln.sell.app/ & goto main
-if %main% == ST start https://kln.sell.app/ & goto main
-if %main% == St start https://kln.sell.app/ & goto main
+if %main% == st start https://klnsmethods.mysellix.io/ & goto main
+if %main% == ST start https://klnsmethods.mysellix.io/ & goto main
+if %main% == St start https://klnsmethods.mysellix.io/ & goto main
 
 if %main% == discord start https://discord.gg/clod & goto main
 if %main% == dc start https://discord.gg/clod & goto main
@@ -463,7 +463,7 @@ goto terms
 :versionview
 echo.
 echo Version: [38;2;69;58;148m%version%[40;37m
-echo   Added: [38;2;73;58;146mNew [38;2;73;58;146mColor [38;2;76;58;143mTheme[40;37m
+echo   Added: [38;2;73;58;146mNew [38;2;73;58;146mDDoS [38;2;76;58;143mScript[40;37m
 set /p versionview=
 goto main
 
@@ -618,7 +618,7 @@ echo    				     [38;2;95;58;137m╔══════════════�
 echo 		  	 	     [38;2;99;58;135m║ [[38;2;88;58;140m08[38;2;99;58;135m] Token Checker                     ║
 echo    				     [38;2;103;58;133m║ [[38;2;88;58;140m09[38;2;103;58;133m] Token Brute-Force                 ║
 echo    				     [38;2;106;58;132m║ [[38;2;91;58;138m10[38;2;106;58;132m] Server Booster                    ║
-echo    				     [38;2;110;58;130m║ [[38;2;95;58;137m11[38;2;110;58;130m] Soon..                            ║
+echo    				     [38;2;110;58;130m║ [[38;2;95;58;137m11[38;2;110;58;130m] ACIO DDoS                         ║
 echo    				     [38;2;114;58;128m║ [[38;2;99;58;135m12[38;2;114;58;128m] Soon..                            ║
 echo    				     [38;2;117;58;127m║ [[38;2;103;58;133m13[38;2;117;58;127m] Soon..                            ║
 echo    				     [38;2;121;58;125m║ [[38;2;106;58;132m14[38;2;121;58;125m] BACK                              ║
@@ -628,10 +628,10 @@ echo    				     [38;2;132;58;120m║ [[38;2;114;58;128m16[38;2;132;58;120m] 
 echo                                      [38;2;136;58;119m╚════════════════════════════════════════╝
 echo ╔═══[38;2;69;58;148m[[38;2;73;58;146mACIO[38;2;76;58;145m@[38;2;80;58;143mMENU[38;2;84;58;141m][38;2;88;58;140m
 set /p main2=╚══[38;2;91;58;138m^>[40;37m 
-if %main2% == 08 echo [38;2;69;58;148mThis feature is not available on the free version. buy here: https://klnsmethods.mysellix.io/ & timeout 5 >nul & goto main
+if %main2% == 08 echo [38;2;69;58;148mThis feature is not available on the free version. buy here: https://klnsmethods.mysellix.io/ & timeout 5 >nul & goto main2
 if %main2% == 09 goto TokenBruteForce
 if %main2% == 10 echo [38;2;69;58;148mThis feature is not available on the free version. buy here: https://klnsmethods.mysellix.io/ & timeout 5 >nul & goto main2
-if %main2% == 11 echo Comming Soon!
+if %main2% == 11 echo [38;2;69;58;148mThis feature is not available on the free version. buy here: https://klnsmethods.mysellix.io/ & timeout 5 >nul & goto main2
 if %main2% == 12 echo Comming Soon!
 if %main2% == 13 echo Comming Soon!
 if %main2% == 14 goto main
@@ -650,9 +650,9 @@ if %main2% == tm goto aboutacio
 if %main2% == TM goto aboutacio
 if %main2% == Tm goto aboutacio
 
-if %main2% == st start https://kln.sell.app/ & goto main2
-if %main2% == ST start https://kln.sell.app/ & goto main2
-if %main2% == St start https://kln.sell.app/ & goto main2
+if %main2% == st start https://klnsmethods.mysellix.io/ & goto main2
+if %main2% == ST start https://klnsmethods.mysellix.io/ & goto main2
+if %main2% == St start https://klnsmethods.mysellix.io/ & goto main2
 
 if %main2% == discord start https://discord.gg/clod & goto main2
 if %main2% == dc start https://discord.gg/clod & goto main2
