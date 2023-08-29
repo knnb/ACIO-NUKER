@@ -1,7 +1,8 @@
-#            VERSION 1.1.0 IS HERE!
+#            VERSION 1.1.4 IS HERE!
 ### whats new?
-- Version: 1.1.0
-- Added: New DDoS Script
+- Version: 1.1.4
+- Added: Proxy Scraper
+- Added: Proxy Checker (http)
   
 
 -------------------
